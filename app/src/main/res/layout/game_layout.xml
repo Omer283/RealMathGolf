@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bubble8"
+    android:weightSum="100">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1">
+
+        <TextView
+            android:textColor="#CACECF"
+            android:id="@+id/tvGoal"
+            android:textStyle="bold"
+            android:fontFamily="@font/alfa_slab_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goal"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:textColor="#CACECF"
+            android:id="@+id/tvMoves"
+            android:textStyle="bold"
+            android:fontFamily="@font/alfa_slab_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moves"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvGoal"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:textColor="#CACECF"
+            android:id="@+id/tvScore"
+            android:textStyle="bold"
+            android:fontFamily="@font/alfa_slab_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvGoal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvGoalNum"
+            android:layout_width="56dp"
+            android:layout_height="43dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="#CACECF"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvGoal" />
+
+        <TextView
+            android:id="@+id/tvScoreNum"
+            android:layout_width="72dp"
+            android:layout_height="43dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="#CACECF"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvGoalNum"
+            app:layout_constraintHorizontal_bias="0.447"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvScore"
+            app:layout_constraintVertical_bias="0.452"></TextView>
+
+
+        <TextView
+            android:textColor="#CACECF"
+            android:id="@+id/tvMovesNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="3"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.559"
+            app:layout_constraintStart_toEndOf="@+id/tvGoalNum"
+            app:layout_constraintTop_toBottomOf="@+id/tvMoves" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/lMain"
+        android:layout_width="419dp"
+        android:layout_height="406dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_weight="7">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="162dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lMain">
+
+        <ImageView
+            android:id="@+id/ivBackToLevelMenu"
+            android:layout_width="130dp"
+            android:layout_height="71dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="30dp"
+            android:layout_weight="2"
+            android:src="@drawable/back"
+            android:text="Return"
+            android:layout_marginBottom="15dp"
+            android:textAllCaps="false"></ImageView>
+
+        <ImageView
+            android:id="@+id/ivResetLevel"
+            android:layout_width="127dp"
+            android:layout_height="94dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="30dp"
+            android:layout_weight="2"
+            android:src="@drawable/unnamed"
+            android:text="Reset"
+            android:textAllCaps="false"></ImageView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

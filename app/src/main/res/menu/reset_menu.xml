@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemYes"
+        android:title="Reset progress"
+        />
+    <item
+        android:id="@+id/itemNo"
+        android:title="Don't reset"
+        />
+</menu>
