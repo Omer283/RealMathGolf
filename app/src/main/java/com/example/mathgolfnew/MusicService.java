@@ -39,7 +39,7 @@ public class MusicService extends Service implements MediaPlayer.OnErrorListener
     public void onCreate() {
         super.onCreate();
 
-        mPlayer = MediaPlayer.create(this, R.raw.tp);
+        mPlayer = MediaPlayer.create(this, R.raw.comc);
         mPlayer.setOnErrorListener(this);
 
         if (mPlayer != null) {
@@ -59,13 +59,6 @@ public class MusicService extends Service implements MediaPlayer.OnErrorListener
         });
     }
 
-    /**
-     * Called when starting
-     * @param intent where it was called from
-     * @param flags
-     * @param startId
-     * @return start not sticky
-     */
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         if (mPlayer != null) {
@@ -102,7 +95,7 @@ public class MusicService extends Service implements MediaPlayer.OnErrorListener
      * Start music.
      */
     public void startMusic() {
-        mPlayer = MediaPlayer.create(this, R.raw.tp);
+        mPlayer = MediaPlayer.create(this, R.raw.comc);
         mPlayer.setOnErrorListener(this);
 
         if (mPlayer != null) {
