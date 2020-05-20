@@ -232,7 +232,7 @@ public class GameBoardActivity extends Activity implements View.OnClickListener 
         }
         d.show();
         Window w = d.getWindow();
-        w.setLayout((int)(0.75f * (Resources.getSystem().getDisplayMetrics().widthPixels)) , (int)(0.52f * (Resources.getSystem().getDisplayMetrics().heightPixels)));
+        w.setLayout((int)(0.88f * (Resources.getSystem().getDisplayMetrics().widthPixels)) , (int)(0.6f * (Resources.getSystem().getDisplayMetrics().heightPixels)));
     }
 
     /**

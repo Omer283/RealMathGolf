@@ -21,7 +21,8 @@
         app:layout_constraintVertical_weight="1">
 
         <TextView
-            android:textColor="#CACECF"
+            android:layout_marginTop="5dp"
+            android:textColor="#000102"
             android:id="@+id/tvGoal"
             android:textStyle="bold"
             android:fontFamily="@font/alfa_slab_one"
@@ -35,7 +36,8 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:textColor="#CACECF"
+            android:layout_marginTop="5dp"
+            android:textColor="#000102"
             android:id="@+id/tvMoves"
             android:textStyle="bold"
             android:fontFamily="@font/alfa_slab_one"
@@ -49,7 +51,8 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:textColor="#CACECF"
+            android:layout_marginTop="5dp"
+            android:textColor="#000102"
             android:id="@+id/tvScore"
             android:textStyle="bold"
             android:fontFamily="@font/alfa_slab_one"
@@ -69,8 +72,8 @@
             android:fontFamily="@font/alfa_slab_one"
             android:text="2"
             android:textAlignment="center"
-            android:textColor="#CACECF"
-            android:textSize="25dp"
+            android:textColor="#000102"
+            android:textSize="30dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -84,8 +87,8 @@
             android:fontFamily="@font/alfa_slab_one"
             android:text="1"
             android:textAlignment="center"
-            android:textColor="#CACECF"
-            android:textSize="25dp"
+            android:textColor="#000102"
+            android:textSize="30dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/tvGoalNum"
@@ -96,13 +99,13 @@
 
 
         <TextView
-            android:textColor="#CACECF"
+            android:textColor="#000102"
             android:id="@+id/tvMovesNum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/alfa_slab_one"
             android:text="3"
-            android:textSize="25dp"
+            android:textSize="30dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

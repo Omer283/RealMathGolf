@@ -12,7 +12,7 @@ from.to
  * The class that generates built in levels
  */
 public class BuiltInLevels {
-    static int levelAmount = 20;
+    static int levelAmount = 4;
 
     /**
      * Gets level amount.
@@ -34,11 +34,11 @@ public class BuiltInLevels {
             case 1:
                 return "6,3|0,-1|2.m.6,5.a.0,8.s.3|0.1,1.2|2,2,2|3";
             case 2:
-                return "9,1|2,-1|1.a.4,4.s.3,5.s.7,2.m.1|1.2,2.0,2.3|3,4,6|7";
-            case 3:
                 return "3,7|0,-1|5.a.7,3.m.2,7.s.4|0.1,1.2,0.2|3,3,3|5";
+            case 3:
+                return "4,-3|0,-1|3.a.7,3.m.2,-1.n.3,10.a.5|0.1,1.2,2.3,0.2,1.3|5,7,10|8";
             case 4:
-                return "2,-4|0,-1|2.a.6,3.m.5,1.s.7,-1.n.1|3.1,1.0,3.2,0.2,0.3|3,4,6|4";
+                return "0,3|0,-1|-1.z.5,3.a.6,1.a.4,2.a.3,1.a.2,1.a.1,1.a.0|5.6,4.5,0.4,2.3,0.2,0.1|1,2,3|9";
             case 5:
                 return "-4,-1|1,-1|-1.n.0,5.m.5,6.a.3,7.a.1,6.a.2|4.2,2.0,0.3,2.1,1.3,1.4|4,6,8|9";
             case 6:

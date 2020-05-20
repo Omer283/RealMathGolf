@@ -200,7 +200,7 @@ public class SelectLevelActivity extends Activity implements View.OnClickListene
         btnExitRandom.setOnClickListener(this);
         d.show();
         Window w = d.getWindow();
-        w.setLayout((int)(0.75f * (Resources.getSystem().getDisplayMetrics().widthPixels)) , (int)(0.50f * (Resources.getSystem().getDisplayMetrics().heightPixels)));
+        w.setLayout((int)(0.85f * (Resources.getSystem().getDisplayMetrics().widthPixels)) , (int)(0.6f * (Resources.getSystem().getDisplayMetrics().heightPixels)));
     }
 
     /**

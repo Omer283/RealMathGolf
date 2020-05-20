@@ -1,7 +1,5 @@
 //TODO FINAL LIST
 //GOOD LOOKING MUTE ICONS
-//MUSIC
-//DIALOG SIZE
 package com.example.mathgolfnew;
 import androidx.annotation.NonNull;
 
